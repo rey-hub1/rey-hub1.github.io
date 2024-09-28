@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        max-height: 100vh;
+        overflow: hidden;
+        font-family: 'Inter';
+      }
+      nav {
+        background-color: #e8e8e8;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 40px;
+        align-items: center;
+      }
+      nav img {
+        width: 32px;
+      }
+      
+      section {
+        position: relative;
+      }
+
+      #pjghti {
+        width: 25vw;
+        margin: auto;
+        position: relative;
+        transform: translateY(-40px);
+        mix-blend-mode: multiply;
+        transform: rotateX(20deg);
+        transform-style: preserve-3d;
+        animation: rotateY 10s infinite linear;
+      }
+
+      @keyframes rotateY {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+
+      .gambar {
+        width: 100vw;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        transform: translateY(-130px);
+      }
+
+      .sec1 {
+        width: 17vw;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+      }
+
+      .sec1 h3 {
+        margin-top: 7px;
+        padding-left: 8px;
+      }
+
+      .sec1 p {
+        margin-top: -15px;
+        padding-left: 10px;
+        font-size: 0.8em;
+        font-weight: normal;
+      }
+
+      .album-foto {
+        width: 17vw;
+        box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+        transition: all ease 1s;
+      }
+
+      .sec1:hover .album-foto {
+        width: 17.1vw;
+        border-radius: 5px;
+        box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="kiri">
+        <h3>our lullaby.</h3>
+      </div>
+      <div class="kanan">
+        <img src="/web/imgs/Heart-merah.png" alt="" />
+        <img src="/web/imgs/Heart-kuning.png" alt="" />
+        <img src="/web/imgs/Heart-hijau.png" alt="" />
+      </div>
+    </nav>
+
+    <section>
+      <center>
+        <img id="pjghti" src="/web/imgs/penjaga-hati.png" alt="" />
+      </center>
+
+      <div class="gambar">
+        <div class="sec1">
+          <img class="album-foto" src="/web/imgs/ciku.png" alt="" />
+          <h3>ciku spesial playlist.🤍</h3>
+          <p>All the songs that force me to think about you</p>
+        </div>
+        <div class="sec1">
+          <img class="album-foto" src="/web/imgs/miku.png" alt="" />
+          <h3>for my valentine,86.⭐</h3>
+          <p>and suddenly all the love songs were about you</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <audio autoplay src="/web/music/penjagahari-edited.MP3"></audio> -->
+  </body>
+</html>
